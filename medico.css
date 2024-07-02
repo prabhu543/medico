@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+/* universal button css */
+button{
+    width: 150px;
+    padding: 12px 15px;
+    background-color: #EDC406;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    /* font-size: 16px; */
+}
+
+
 /* page 1 👇👇👇  */
 
 .page1{
@@ -59,19 +72,12 @@
     bottom: -28px;
     left: 32.6%;
 }
-.page1 .hero_section button{
-    width: 150px;
-    padding: 12px 15px;
-    background-color: #EDC406;
-    border: 2px solid white;
-    border-radius: 20px;
-    text-transform: uppercase;
+.page1 .hero_section .shop{
     position: absolute;
     bottom: 51.5%;
     left: 44.1%;
-    /* font-weight: 600; */
-    /* font-size: 16px; */
 }
+
 .page1 .hero_section .paras{
     /* background-color: yellowgreen; */
     display: flex;
@@ -138,6 +144,8 @@
     padding: 10px;
     text-align: center;
     transition: ease-in-out 0.2s ;
+    border-radius: 4px;
+    font-weight: 100;
 }
 .hero_features:nth-child(1){
     box-shadow: 1px 2px 6px rgba(30, 29, 29, 0.286);
@@ -147,4 +155,233 @@
 }
 .page2 .hero_features img{
     width: 60px;
+}
+
+/* page 3 👇👇👇 */
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-color: #0D9C4D;
+}
+.page3 .part1{
+    width: 100%;
+    height: 18%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.page3 .part1 h1{
+    font-size: 35px;
+    color: #fff;
+}
+.page3 .part1 span{
+    color: #EDC406;
+}
+.page3 .part1 .line{
+    width: 200px;
+    height: 2px;
+    background-color: #EDC406;
+}
+.page3 .part2{
+    width: 100%;
+    height: calc(100vh - 18%);
+    /* background-color: rgb(23, 6, 6); */
+}
+.page3 .part2 .row1,.row2{
+    width: 100%;
+    height: calc(100vh - 18% - 55%);
+    /* background-color: rgb(26, 26, 182); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 120px;
+}
+.page3 .part2 .row {
+    width: 25%;
+    height: 220px;
+    /* background-color: rgb(193, 214, 32); */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+    color: #fff;
+}
+.page3 .part2 .row img{
+    width: 80px;
+    /* height: 100px; */
+}
+
+/* page 4 👇👇👇 */
+
+.page4{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+}
+.page4 .part1{
+    width: 100%;
+    height:58%;
+    /* background-color: #bd1414; */
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 5%  8% 0;
+}
+.page4 .part1 img{
+    width: 30%;
+    /* background-color: yellowgreen; */
+    padding: 10px;
+}
+.page4 .part1 .challenge{
+    /* background-color: aqua; */
+    /* margin-left: 4%; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 45%;
+}
+.page4 .part1 .challenge h1{
+    font-size: 45px;
+    position: relative;
+}
+.page4 .part1 .challenge h1::after{
+    content: ' ';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    /* background-color: #EDC406; */
+    bottom: -20px;
+    border-radius: 5px;
+    left: 0;
+}
+.page4 .part1 .challenge p{
+    width: 85%;
+    /* background-color: blueviolet; */
+    margin-top: 15px;
+}
+.page4 .part1 .challenge h3{
+    color: #2683A1;
+}
+.page4 .part2 {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 58%);
+    /* background-color: #0D9C4D; */
+}
+.page4 .part2 .img{
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    padding:5% 10%;
+}
+
+/* page 5 👇👇👇 */
+
+.page5{
+    width: 100%;
+    height: 100vh;
+    background-color:#0D9C4D ;
+    position: relative;
+    z-index: -1;
+}
+.page5 .full{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    color: #fff;
+}
+.page5 .full h1{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.page5 .full .a,
+.page5 .full .b {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background: black; */
+    margin-bottom: 5%;
+}
+.page5 .full  .stick {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: aqua; */
+}
+.page5 .full .stick .text{
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 15px;
+    margin-left: 10px;
+}
+.page5 .full .stick img{
+    width: 80px;
+}
+.page5 .full .stick .text h3{
+    font-size: 22px;
+}
+.page5 .full .stick .text p{
+    font-size: 18px;
+}
+
+/* page 6 👇👇👇 */
+
+.page6{
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+}
+.page6 .a {
+    width: 100%;
+    height: calc(100vh - 26%);
+    display: flex;
+    padding: 5% 15%;
+    align-items: center;
+    gap: 5%;
+    /* background-color: red; */
+}
+.page6 .a .part1 {
+    /* width: 100%; */
+    display: flex;
+    /* padding: 10px 0; */
+}
+.page6 .a .part2{
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.page6 .a .part2 h3{
+    text-decoration: underline;
+    font-size: 400;
+}
+.page6 .a .part2 p{
+    font-weight:100;
+}
+.page6 .b{
+    height:26%;
+    width: 100%;
+    background-color:#0D9C4D;
+    text-align: center;
+    color: #fff;
+    /* position: relative; */
+}
+.page6 .b h3{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 4% 15%;
+    font-size: 28px;
 }
